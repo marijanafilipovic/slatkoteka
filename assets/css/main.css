@@ -12,24 +12,41 @@ body{
     align-items: flex-start;
 }
 /* GRID GALLERY */
-#grid-gallery{
-    margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 5%;
+#grid-gallery .row{
+/*    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 744px;
+
+    grid-auto-flow: column;*/
+ /*   grid-auto-columns: minmax(175px, 533px);*/
+}
+
+.grid-one{
+    grid-area: 1/1/4/2;
+}
+.grid-two{
+    grid-area: 1/2/2/3;
+}
+.grid-three{
+    grid-area: 1/3/2/4;
+}
+#grid-gallery .col-lg-3,#grid-gallery .col-lg-5,#grid-gallery .col-lg-4 {
+     padding-bottom: 7px;
 }
 #grid-gallery img{
-width: auto;
+width: 100%;
     height: 100%;
 }
+
 .parent{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-column-gap: 19px;
-    grid-row-gap: 19px;
-    grid-auto-rows: minmax(124px, 193px);
-    grid-auto-columns: minmax(175px, 688px);
-    width:413px;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-auto-rows: minmax(124px, 744px);
+    grid-auto-columns: minmax(175px, 533px);
+/*    width:413px;*/
 }
 .parent2{
     display: grid;
@@ -37,21 +54,37 @@ width: auto;
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 19px;
     grid-row-gap: 19px;
-    width: 568px;
+/*    width: 568px;*/
+
+    grid-auto-rows: minmax(175px, 744px);
+    grid-auto-columns: minmax(124px, 193px);
 }
-.parent3{
+/*.parent2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 19px;
-    grid-row-gap: 19px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 17px;
+    grid-row-gap: 17px;
+!*    width: 568px;*!
 
-}
-.grid-one{
-    width: 442px;
-}
-.grid-three{
-    width: 473px;
+    grid-auto-rows: minmax(124px,  549px);
+    grid-auto-columns: minmax(175px, 549px);
+}*/
+.parent3{
+    display: grid;
+    /*
+    grid-template-columns: repeat(3, 1fr);
+    */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+    grid-auto-rows: minmax(124px, 744px);
+    grid-auto-columns: minmax(175px, 544px);
+
+   /* width:474px;*/
+/*    width: 339px;*/
 }
 .parent3 .div1{
     grid-area: 1/1/4/3;}
@@ -67,7 +100,6 @@ width: auto;
 .parent3 .div5{
     grid-area: 6/1/9/3;
 }
-
 .parent2 .div1{
     grid-area: 1/1/3/3;}
 .parent2 .div2{
@@ -86,32 +118,38 @@ width: auto;
     grid-area: 4/1/5/2;
 }
 .parent .div1{
-   /* grid-area: 1/1/8/2;*/
     grid-area: 1/1/7/2;
-/*    background-image: url("../images/grid/row1.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;*/
-
+/*    grid-area: 1/1/7/2;*/
+/*   background-image: url("../images/grid/row1.jpg");*/
 }
 .parent .div2{
-/*    grid-area: 1/2/3/4;*/
     grid-area: 1/2/3/4;
+    /*
+    grid-area: 1/2/3/4;
+    */
+    /*
     background-image: url("../images/grid/row2.jpg");
+    */
 }
 .parent .div3{
+/*    grid-area: 3/2/6/4;*/
+
     grid-area: 3/2/6/4;
-    /*
-    grid-area: 3/2/7/4;*/
+ /*
     background-image: url("../images/grid/div3.jpg");
+    */
 }
 .parent .div4{
-    grid-area: 7/1/9/2;
+/*    grid-area: 7/1/9/2;*/
 /*    grid-area: 8/1/10/2;*/
+    grid-area:7/1/9/2;
+    /*
     background-image: url("../images/grid/div4.jpg");
+    */
 }
 .parent .div5{
+  /*  grid-area: 6/2/9/4;*/
     grid-area: 6/2/9/4;
-/*    grid-area: 7/2/10/4;*/
 /*    background-image: url("../images/grid/div5.jpg");*/
 }
 /* END GRID GALLERY */
@@ -165,6 +203,7 @@ width: auto;
     background-image: url("../images/mapa.JPG");
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 180px;
 }
 .linija-napomena{
     border-bottom: 1px dashed darkgrey;
@@ -241,28 +280,127 @@ text-align: justify;
     font-size: 12px;
     font-family: 'VarelaRound', sans-serif;
 }
-@media(min-width: 992px)
-{
+.btn-ketering{
+    font-size: 14px;
+    font-family: 'SecularOne', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #f454a0;
+    padding: 5px;
+    min-width: 80px;
+    max-width: 120px;
+    text-align: center;
+}
+#reference h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+#reference .row{
+    padding-top: 25px;
+}
+.reference{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(81px, 1fr));
+    gap: 1rem;
+}
+.reference div{
+    min-width: 81px;
+    max-width: 114px;
+    height: 42px;
+    background-color: #d8d8d8;
+}
+.podrzali-smo{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(81px, 1fr));
+    gap: 1rem;
+}
+.podrzali-smo div{
+    min-width: 81px;
+    max-width: 114px;
+    height: 42px;
+    background-color: #d8d8d8;
+}
+#footer-container{
+    background-color: #ffebf2;
+    background-image: url(../images/back-right.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    min-height: 345px;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.banner-1-deo{
+    display: inline-block;
+}
+.banner-2-deo{
+    display: inline-block;
+}
+.banner-3-deo{
+    display: inline-block;
+}
+
+@media(max-width: 576px) {
+
+    .mapa-lokacije{
+        margin-right: 15px;
+        min-height: 180px;
+    }
+    .banner-1-deo img{
+        display: none;
+    }
+    .banner-2-deo img{
+        display: none;
+    }
+    .banner-3-deo img{
+        display: block;
+    }
+}
+
+
+@media(min-width: 768px) {
+    .banner-1-deo img{
+        display: none;
+    }
+    .banner-2-deo img{
+        display: none;
+    }
+    .banner-3-deo img{
+        display: block;
+    }
+}
+
+@media(min-width: 992px) {
     .navbar-expand-lg{
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-}
-@media (min-width: 576px) {
-
-}
-
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
-
+    .mapa-lokacije{
+        margin-right: 0;
+        min-height: 100%;
+    }
+    .banner-1-deo img{
+        display: block;
+    }
+    .banner-2-deo img{
+        display: none;
+    }
+    .banner-3-deo img{
+        display: block;
+    }
 }
 
 @media (min-width: 1200px) {
-
+    .banner-1-deo img{
+        display: block;
+    }
+    .banner-2-deo img{
+        display: block;
+    }
+    .banner-3-deo img{
+        display: block;
+    }
 }
 
 @media (min-width: 1400px) {
