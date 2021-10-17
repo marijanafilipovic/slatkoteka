@@ -4,6 +4,16 @@
     <list default="true" id="32b4d677-48fd-44f3-a31b-77c7af5d4016" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid/div3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid/div5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid/row1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid/row2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid_2/div1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid_2/div2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid_2/div3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid_2/div4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid_2/div5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/grid_2/div6.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,11 +46,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../React" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\React" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,11 +66,23 @@
       <option name="presentableId" value="Default" />
       <updated>1634382762407</updated>
       <workItem from="1634382764579" duration="37966000" />
-      <workItem from="1634458405767" duration="18154000" />
+      <workItem from="1634458405767" duration="34502000" />
     </task>
+    <task id="LOCAL-00001" summary="2sec push">
+      <created>1634483436819</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634483436819</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2sec push" />
+    <option name="LAST_COMMIT_MESSAGE" value="2sec push" />
   </component>
 </project>

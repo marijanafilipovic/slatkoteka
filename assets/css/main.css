@@ -266,6 +266,9 @@ text-align: justify;
     padding-right: 50px;
     /*height:70px;*/
 }
+#menu img{
+    margin-top: 10px;
+}
 .navbar-toggler-icon{
     border: none !important;
     color: black !important;
@@ -280,6 +283,34 @@ text-align: justify;
     font-size: 12px;
     font-family: 'VarelaRound', sans-serif;
 }
+.btn-krofne{
+    font-size: 12px;
+    font-family: 'SecularOne', sans-serif;
+    font-weight: bolder;
+    background-color: #ffebf2;
+    padding: 2px;
+}
+.btn-slatkolade{
+    font-size: 12px;
+    font-family: 'SecularOne', sans-serif;
+    font-weight: bolder;
+    background-color: #a3e8d6;
+    padding: 2px;
+}
+.btn-iznenadjenja{
+    font-size: 12px;
+    font-family: 'SecularOne', sans-serif;
+    font-weight: bolder;
+    background-color: #fcfa96;
+    padding: 2px;
+}
+.btn-kapkejk{
+    font-size: 12px;
+    font-family: 'SecularOne', sans-serif;
+    font-weight: bolder;
+    background-color: #e0c5ec;
+    padding: 2px;
+}
 .btn-ketering{
     font-size: 14px;
     font-family: 'SecularOne', sans-serif;
@@ -288,7 +319,7 @@ text-align: justify;
     background-color: #f454a0;
     padding: 5px;
     min-width: 80px;
-    max-width: 120px;
+    max-width: 160px;
     text-align: center;
 }
 #reference h5{
@@ -321,11 +352,23 @@ text-align: justify;
     background-color: #d8d8d8;
 }
 #footer-container{
+    padding-top: 55px;
     background-color: #ffebf2;
     background-image: url(../images/back-right.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     min-height: 345px;
+}
+#footer-container h6{
+    font-weight: bolder;
+    font-family: 'SecularOne', sans-serif;
+}
+#footer-container p{
+    font-family: 'VarelaRound', sans-serif;
+}
+.footer-one {
+    min-height: 345px;
+    background-image: url(../images/path-9-copy-2.svg);
 }
 .container-fluid{
     padding-left: 0;
@@ -340,7 +383,34 @@ text-align: justify;
 .banner-3-deo{
     display: inline-block;
 }
+.parentito {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
+    background-color: #0a53be;
+}
 
+.parentito .div1 { grid-area: 1 / 1 / 9 / 4; }
+.parentito .div2 { grid-area: 1 / 4 / 9 / 8; }
+.parentito .div3 { grid-area: 1 / 8 / 9 / 11; }
+.parentito .div4 { grid-area: 1 / 1 / 7 / 2; background-color: #ffebf2 }
+.parentito.div5 { grid-area: 1 / 2 / 3 / 4; background-color: #ffebf2 }
+.parentito .div6 { grid-area: 3 / 2 / 6 / 4; background-color: #ffebf2 }
+.parentito .div7 { grid-area: 6 / 2 / 9 / 4; background-color: #ffebf2 }
+.parentito .div8 { grid-area: 7 / 1 / 9 / 2; background-color: #ffebf2 }
+.parentito .div9 { grid-area: 1 / 4 / 5 / 7; background-color: #ffebf2 }
+.parentito .div10 { grid-area: 1 / 7 / 3 / 8; background-color: #ffebf2 }
+.parentito .div11 { grid-area: 3 / 7 / 5 / 8; background-color: #ffebf2 }
+.parentito .div12 { grid-area: 5 / 4 / 7 / 5; background-color: #ffebf2 }
+.parentito .div13 { grid-area: 5 / 5 / 9 / 8; background-color: #ffebf2 }
+.parentito .div14 { grid-area: 7 / 4 / 9 / 5; background-color: #ffebf2 }
+.parentito .div15 { grid-area: 1 / 8 / 4 / 10; background-color: #ffebf2 }
+.parentito .div16 { grid-area: 1 / 10 / 3 / 11; background-color: #ffebf2 }
+.parentito .div17 { grid-area: 3 / 10 / 9 / 11; background-color: #ffebf2 }
+.parentito .div18 { grid-area: 4 / 8 / 6 / 10; background-color: #ffebf2 }
+.parentito .div19 { grid-area: 6 / 8 / 9 / 10; background-color: #ffebf2 }
 @media(max-width: 576px) {
 
     .mapa-lokacije{
@@ -360,6 +430,9 @@ text-align: justify;
 
 
 @media(min-width: 768px) {
+    #menu{
+        height: 70px;
+    }
     .banner-1-deo img{
         display: none;
     }
@@ -372,6 +445,9 @@ text-align: justify;
 }
 
 @media(min-width: 992px) {
+    #menu{
+        height: 70px;
+    }
     .navbar-expand-lg{
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -406,3 +482,31 @@ text-align: justify;
 @media (min-width: 1400px) {
 
 }
+/*
+.parent {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 9 / 4; }
+.div2 { grid-area: 1 / 4 / 9 / 8; }
+.div3 { grid-area: 1 / 1 / 7 / 2; }
+.div4 { grid-area: 1 / 2 / 3 / 4; }
+.div5 { grid-area: 3 / 2 / 6 / 4; }
+.div6 { grid-area: 6 / 2 / 9 / 4; }
+.div7 { grid-area: 7 / 1 / 9 / 2; }
+.div8 { grid-area: 1 / 4 / 5 / 7; }
+.div9 { grid-area: 1 / 7 / 3 / 8; }
+.div10 { grid-area: 3 / 7 / 5 / 8; }
+.div11 { grid-area: 5 / 4 / 7 / 5; }
+.div12 { grid-area: 7 / 4 / 9 / 5; }
+.div13 { grid-area: 5 / 5 / 9 / 8; }
+.div14 { grid-area: 1 / 8 / 9 / 11; }
+.div15 { grid-area: 1 / 8 / 4 / 10; }
+.div16 { grid-area: 4 / 8 / 6 / 10; }
+.div17 { grid-area: 6 / 8 / 9 / 10; }
+.div18 { grid-area: 3 / 10 / 9 / 11; }
+.div19 { grid-area: 1 / 10 / 3 / 11; }*/
